@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/andybrandt-mcp-simple-arxiv-badge.png)](https://mseep.ai/app/andybrandt-mcp-simple-arxiv)
+
 # mcp-simple-arxiv
 
 [![smithery badge](https://smithery.ai/badge/mcp-simple-arxiv)](https://smithery.ai/server/mcp-simple-arxiv)
