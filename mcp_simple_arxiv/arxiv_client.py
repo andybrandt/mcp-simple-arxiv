@@ -18,7 +18,7 @@ class ArxivClient:
     """
     
     def __init__(self):
-        self.base_url = "http://export.arxiv.org/api/query"
+        self.base_url = "https://export.arxiv.org/api/query"
         self._last_request: Optional[datetime] = None
         self._lock = asyncio.Lock()
         
