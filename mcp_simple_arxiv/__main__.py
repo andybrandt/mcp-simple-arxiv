@@ -1,8 +1,12 @@
 """
-Main entry point for running the server as a module.
+Main entry point for the MCP server.
 """
-import asyncio
-from .server import main
+
+from .server import app
+
+def main():
+    """Run the MCP server."""
+    app.run()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

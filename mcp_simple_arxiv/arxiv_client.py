@@ -139,10 +139,10 @@ class ArxivClient:
             "sortOrder": "descending",
         }
         
-        async with httpx.AsyncClient() as client:
+        async with httpx.AsyncClient(timeout=20.0) as client:
             try:
                 response = await client.get(self.base_url, params=params)
-                response.raise_for_status()
+                response.raise_for_status() # Raise an exception for bad status codes
                 
                 # Parse the Atom feed response
                 feed = feedparser.parse(response.text)
@@ -184,7 +184,7 @@ class ArxivClient:
             "max_results": 1
         }
         
-        async with httpx.AsyncClient() as client:
+        async with httpx.AsyncClient(timeout=20.0) as client:
             try:
                 response = await client.get(self.base_url, params=params)
                 response.raise_for_status()
