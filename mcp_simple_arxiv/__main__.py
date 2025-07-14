@@ -2,11 +2,7 @@
 Main entry point for the MCP server.
 """
 
-from .server import app
-
-def main():
-    """Run the MCP server."""
-    app.run()
+from .server import main
 
 if __name__ == "__main__":
     main()

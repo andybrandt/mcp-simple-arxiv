@@ -1,0 +1,18 @@
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the entire project into the container
+COPY . .
+
+# Install the project dependencies
+# Using --no-cache-dir is a good practice for keeping image size down
+RUN pip install --no-cache-dir .
+
+# Expose the port the app runs on
+EXPOSE 8000
+
+# Run the web server when the container launches
+CMD ["python", "-m", "mcp_simple_arxiv.web_server"] 

@@ -15,9 +15,12 @@ This server allows LLM clients (like Claude Desktop) to:
 - Get paper metadata and abstracts
 - Access links to available paper formats (PDF/HTML)
 
-The server implements proper rate limiting according to arXiv's API guidelines (max 1 request every 3 seconds).
+To use the web version just add this connector to Claude.ai https://mcp.andybrandt.net/arxiv .
+You can also install & use it locally. 
 
-## Installation
+## Installation and Deployment
+
+This server can be run in two modes: as a local `stdio` server for desktop clients or as a network-accessible web server.
 
 ### Installing via Smithery
 
@@ -94,6 +97,9 @@ This will return:
 - Journal reference (if available)
 - Paper abstract
 - Links to available formats (PDF/HTML)
+
+
+*For web deployment see [DEPLOYMENT.md](DEPLOYMENT.md)*.
 
 ## Development
 
