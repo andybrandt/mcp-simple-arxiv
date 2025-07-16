@@ -1,8 +1,7 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/andybrandt-mcp-simple-arxiv-badge.png)](https://mseep.ai/app/andybrandt-mcp-simple-arxiv)
-
 # mcp-simple-arxiv
 
 [![smithery badge](https://smithery.ai/badge/mcp-simple-arxiv)](https://smithery.ai/server/mcp-simple-arxiv)
+[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/dc95dba9-149a-4eaa-bf08-36e0cb0f3a5a)
 
 An MCP server that provides access to arXiv papers through their API.
 
