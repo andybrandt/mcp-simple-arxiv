@@ -21,7 +21,7 @@ def main():
         transport="streamable-http",
         host="0.0.0.0",
         port=8000,
-        stateless_http=True
+        stateless_http=False
     )
 
 if __name__ == "__main__":
