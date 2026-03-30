@@ -8,6 +8,10 @@ An MCP server that provides access to arXiv papers through their API.
 
 <a href="https://glama.ai/mcp/servers/p38q3nagwb"><img width="380" height="200" src="https://glama.ai/mcp/servers/p38q3nagwb/badge" alt="mcp-simple-arxiv MCP server" /></a>
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/andybrandt-mcp-simple-arxiv).
+
 ## Features
 
 This server allows LLM clients (like Claude Desktop) to:
