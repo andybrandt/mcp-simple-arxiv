@@ -4,6 +4,7 @@ arXiv API client with rate limiting.
 
 import asyncio
 import logging
+import re
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from enum import Enum
@@ -66,10 +67,11 @@ class ArxivClient:
         Construct HTML version URL for a paper.
         
         The HTML version URL is not provided by the API but can be constructed
-        by modifying the PDF URL pattern.
+        from the paper ID with the version suffix removed.
         """
-        # Remove version suffix if present (e.g., v1, v2)
-        base_id = arxiv_id.split('v')[0]
+        # Remove only a trailing version suffix (e.g., v1, v12); legacy archive
+        # names such as "solv-int" may contain the letter "v" themselves
+        base_id = re.sub(r'v[0-9]+$', '', arxiv_id)
         return f"https://arxiv.org/html/{base_id}"
 
     def _parse_entry(self, entry: Dict[str, Any]) -> Dict[str, Any]:
