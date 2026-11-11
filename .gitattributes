@@ -1,0 +1,4 @@
+# Store all text files with LF line endings in the repository, regardless of
+# the contributor's operating system or editor settings. Git detects binary
+# files automatically and leaves them untouched.
+* text=auto eol=lf
