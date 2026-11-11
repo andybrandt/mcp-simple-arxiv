@@ -1,7 +1,7 @@
 # mcp-simple-arxiv
 
 [![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/andybrandt/mcp-simple-arxiv)](https://archestra.ai/mcp-catalog/andybrandt__mcp-simple-arxiv)
-[![smithery badge](https://smithery.ai/badge/mcp-simple-arxiv)](https://smithery.ai/server/mcp-simple-arxiv)
+[![Listed on LightNow](https://lightnow.ai/badge/io.github.andybrandt/mcp-simple-arxiv?variant=listed)](https://lightnow.ai/servers/io.github.andybrandt/mcp-simple-arxiv)
 [![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/dc95dba9-149a-4eaa-bf08-36e0cb0f3a5a)
 
 An MCP server that provides access to arXiv papers through their API.
